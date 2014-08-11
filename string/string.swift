@@ -18,6 +18,7 @@ extension String {
         return result
     }
     var isUpper:Bool { return self.uppercaseString == self }
+    var isLower:Bool { return self.lowercaseString == self }
     func count(sub:String) -> Int {
         var result:Int = 0
         var s = self
