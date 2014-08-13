@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9213A8D6199771BC005797CE /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9213A8D5199771BC005797CE /* main.swift */; };
 		9213A8DD199771D3005797CE /* string.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9213A8DC199771D3005797CE /* string.swift */; };
+		922E21321998A28A00665948 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 922E21311998A28A00665948 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,6 +28,8 @@
 		9213A8D2199771BC005797CE /* string */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = string; sourceTree = BUILT_PRODUCTS_DIR; };
 		9213A8D5199771BC005797CE /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		9213A8DC199771D3005797CE /* string.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = string.swift; sourceTree = "<group>"; };
+		922E21301998A28A00665948 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		922E21311998A28A00665948 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +46,8 @@
 		9213A8C9199771BC005797CE = {
 			isa = PBXGroup;
 			children = (
+				922E21301998A28A00665948 /* LICENSE */,
+				922E21311998A28A00665948 /* README.md */,
 				9213A8D4199771BC005797CE /* string */,
 				9213A8D3199771BC005797CE /* Products */,
 			);
@@ -121,6 +126,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				922E21321998A28A00665948 /* README.md in Sources */,
 				9213A8DD199771D3005797CE /* string.swift in Sources */,
 				9213A8D6199771BC005797CE /* main.swift in Sources */,
 			);
@@ -237,6 +243,7 @@
 				9213A8DB199771BC005797CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

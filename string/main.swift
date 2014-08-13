@@ -18,14 +18,10 @@ println("WeeeEEEEeeeEEEEeee".swapcaseString)
 
 println("ABC123".isUpper)
 
+println("abc123".isLower)
+
 println("aeiouAEIOU".count("a"))
 
-println("hello".hasSuffix("o"))
+println("aeiouAEIOUaeiou".count("a"))
 
-println("hello".hasPrefix("H"))
-
-let s = "Swift"
-println("Hello \(s)")
-
-let s1 = "World"
-println("Hello \(s)! Hello \(s1)!")
+println("swift".find("i"))
