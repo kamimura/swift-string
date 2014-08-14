@@ -12,4 +12,5 @@ println("aeiouAEIOUaeiou".count("a"))        // 2
 println("swift".find("i"))                   // 2
 println("runner".replace("n", new_str: "b")) // rubber
 println(" yes  ".strip())                    // yes
+println("swift".slice(start: 1, end: 2))     // w
 ````

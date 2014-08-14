@@ -52,4 +52,14 @@ extension String {
     func strip() -> String {
         return self.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
     }
+    func slice(start:Int=0, end:Int?=nil) -> String {
+        let s = self as NSString
+        var new_end:Int
+        if (end) {
+            new_end = end!
+        } else {
+            new_end = s.length
+        }
+        return  s.substringWithRange(NSRange(location: start, length:new_end - start))
+    }
 }

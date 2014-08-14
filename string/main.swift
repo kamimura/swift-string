@@ -29,3 +29,5 @@ println("swift".find("i"))
 println("runner".replace("n", new_str: "b"))
 
 println(" yes  ".strip())
+
+println("swift".slice(start: 1, end: 2))
