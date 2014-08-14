@@ -25,3 +25,7 @@ println("aeiouAEIOU".count("a"))
 println("aeiouAEIOUaeiou".count("a"))
 
 println("swift".find("i"))
+
+println("runner".replace("n", new_str: "b"))
+
+println(" yes  ".strip())

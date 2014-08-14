@@ -46,4 +46,10 @@ extension String {
         }
         return -1
     }
+    func replace(old_str:String, new_str:String) -> String {
+        return self.stringByReplacingOccurrencesOfString(old_str, withString: new_str)
+    }
+    func strip() -> String {
+        return self.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
+    }
 }
