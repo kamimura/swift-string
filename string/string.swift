@@ -36,7 +36,7 @@ extension String {
     }
     func find(sub:String, start:Int = 0, end:Int? = nil) -> Int {
         var s = self as NSString
-        var s_temp = s
+        var s_temp = s.substringFromIndex(start)
         let end_temp:Int = end ? end! : s.length
         for i in start..<end_temp {
             if (s_temp.hasPrefix(sub)) {
