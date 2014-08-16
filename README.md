@@ -13,4 +13,9 @@ println("swift".find("i"))                   // 2
 println("runner".replace("n", new_str: "b")) // rubber
 println(" yes  ".strip())                    // yes
 println("swift".slice(start: 1, end: 2))     // w
+println("swift".length)                      // 5
+println("swift".split())                     // [s, w, i, f, t]
+println("/usr/bin/env".split(sep: "/"))      // [usr, bin, env]
+println("aswiftbswift".split(sep: "swift"))  // [a, b]
+println("swift".reversed)                    // tfiws
 ````

@@ -19,6 +19,7 @@ extension String {
     }
     var isUpper:Bool { return self.uppercaseString == self }
     var isLower:Bool { return self.lowercaseString == self }
+    var length:Int { return (self as NSString).length }
     func count(sub:String) -> Int {
         var result:Int = 0
         var s = self
@@ -62,4 +63,33 @@ extension String {
         }
         return  s.substringWithRange(NSRange(location: start, length:new_end - start))
     }
+    func split(sep:String = "") -> [String] {
+        var result:[String] = []
+        if (sep == "") {
+            for ch in self {
+                result.append(String(ch))
+            }
+            return result
+        }
+        var s:String = self
+        var len = sep.length
+        var temp:String = ""
+        while s != "" {
+            if s.hasPrefix(sep) {
+                if temp != "" {
+                    result.append(temp)
+                    temp = ""
+                }
+                s = s.slice(start: len)
+            } else {
+                temp += s.slice(start: 0, end: 1)
+                s = s.slice(start: 1)
+            }
+        }
+        if temp != "" {
+            result.append(temp)
+        }
+        return result
+    }
+    var reversed:String { return "".join(self.split().reverse()) }
 }

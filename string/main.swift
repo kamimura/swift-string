@@ -31,3 +31,13 @@ println("runner".replace("n", new_str: "b"))
 println(" yes  ".strip())
 
 println("swift".slice(start: 1, end: 2))
+
+println("swift".length)
+
+println("swift".split())
+
+println("/usr/bin/local".split(sep: "/"))
+
+println("aswiftbswift".split(sep: "swift"))
+
+println("swift".reversed)
