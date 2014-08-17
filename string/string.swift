@@ -20,6 +20,7 @@ extension String {
     var isUpper:Bool { return self.uppercaseString == self }
     var isLower:Bool { return self.lowercaseString == self }
     var length:Int { return (self as NSString).length }
+    var strip:String { return self.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())}
     func count(sub:String) -> Int {
         var result:Int = 0
         var s = self
@@ -49,9 +50,6 @@ extension String {
     }
     func replace(old_str:String, new_str:String) -> String {
         return self.stringByReplacingOccurrencesOfString(old_str, withString: new_str)
-    }
-    func strip() -> String {
-        return self.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
     }
     func slice(start:Int=0, end:Int?=nil) -> String {
         let s = self as NSString
