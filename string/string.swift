@@ -21,6 +21,8 @@ extension String {
     var isLower:Bool { return self.lowercaseString == self }
     var length:Int { return (self as NSString).length }
     var strip:String { return self.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())}
+    var floatValue:Float { return (self as NSString).floatValue }
+    var doubleValue:Double { return (self as NSString).doubleValue }
     func count(sub:String) -> Int {
         var result:Int = 0
         var s = self

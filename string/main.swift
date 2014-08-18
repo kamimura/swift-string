@@ -39,3 +39,7 @@ println("/usr/bin/local".split(sep: "/"))
 println("aswiftbswift".split(sep: "swift"))
 
 println("swift".reversed)
+
+println("1.2".floatValue)
+
+println("1.2".doubleValue)

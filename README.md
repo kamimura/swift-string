@@ -18,4 +18,6 @@ println("swift".split())                     // [s, w, i, f, t]
 println("/usr/bin/env".split(sep: "/"))      // [usr, bin, env]
 println("aswiftbswift".split(sep: "swift"))  // [a, b]
 println("swift".reversed)                    // tfiws
+println("1.2".floatValue)                    // 1.20000004768372
+println("1.2".doubleValue)                   // 1.2
 ````
