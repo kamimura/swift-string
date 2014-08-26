@@ -43,3 +43,7 @@ println("swift".reversed)
 println("1.2".floatValue)
 
 println("1.2".doubleValue)
+
+println("swift".indexAt(2))
+
+println("swift".indexAt(-2))

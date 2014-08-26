@@ -50,6 +50,13 @@ extension String {
         }
         return -1
     }
+    func indexAt(i:Int) -> String {
+        if i >= 0 {
+            return (self as NSString).substringWithRange(NSRange(location: i, length: 1))
+        }
+        let new_i = self.length + i
+        return (self as NSString).substringWithRange(NSRange(location: new_i, length: 1))
+    }
     func replace(old_str:String, new_str:String) -> String {
         return self.stringByReplacingOccurrencesOfString(old_str, withString: new_str)
     }

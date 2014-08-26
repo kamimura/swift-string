@@ -22,4 +22,6 @@ println("aswiftbswift".split(sep: "swift"))  // [a, b]
 println("swift".reversed)                    // tfiws
 println("1.2".floatValue)                    // 1.20000004768372
 println("1.2".doubleValue)                   // 1.2
+println("swift".indexAt(2))                  // i
+println("swift".indexAt(-2))                 // f
 ````
