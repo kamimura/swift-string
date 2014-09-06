@@ -24,4 +24,7 @@ println("1.2".floatValue)                    // 1.20000004768372
 println("1.2".doubleValue)                   // 1.2
 println("swift".indexAt(2))                  // i
 println("swift".indexAt(-2))                 // f
+println("swift".repeat(10))                  // swiftswiftswiftswiftswiftswiftswiftswiftswiftswift
+println("swift" * 10)                        // swiftswiftswiftswiftswiftswiftswiftswiftswiftswift
+println(10 * "swift")                        // swiftswiftswiftswiftswiftswiftswiftswiftswiftswift
 ````

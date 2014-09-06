@@ -47,3 +47,9 @@ println("1.2".doubleValue)
 println("swift".indexAt(2))
 
 println("swift".indexAt(-2))
+
+println("swift".repeat(10))  
+
+println("swift" * 10)
+
+println(10 * "swift")

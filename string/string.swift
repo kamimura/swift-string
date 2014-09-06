@@ -41,7 +41,7 @@ extension String {
     func find(sub:String, start:Int = 0, end:Int? = nil) -> Int {
         var s = self as NSString
         var s_temp = s.substringFromIndex(start)
-        let end_temp:Int = end ? end! : s.length
+        let end_temp:Int = end != nil ? end! : s.length
         for i in start..<end_temp {
             if (s_temp.hasPrefix(sub)) {
                 return i
@@ -63,7 +63,7 @@ extension String {
     func slice(start:Int=0, end:Int?=nil) -> String {
         let s = self as NSString
         var new_end:Int
-        if (end) {
+        if (end != nil) {
             new_end = end!
         } else {
             new_end = s.length
@@ -99,4 +99,19 @@ extension String {
         return result
     }
     var reversed:String { return "".join(self.split().reverse()) }
+    func repeat(n:Int) -> String {
+        var result:String = ""
+        for i in 0..<n {
+            result += self
+        }
+        return result
+    }
+}
+
+func * (left:String, right:Int) -> String{
+    return left.repeat(right)
+}
+
+func * (left:Int, right:String) -> String{
+    return right.repeat(left)
 }
