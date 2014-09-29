@@ -53,3 +53,7 @@ println("swift".repeat(10))
 println("swift" * 10)
 
 println(10 * "swift")
+
+println("  ".isSpace)
+
+println("Programming Swift".startsWith("Pro"))
